@@ -9,14 +9,10 @@ public class App {
 
         // cat --> Referenzvariable
         // Cat --> Referenztyp(Klasse)
-        Cat cat = new Cat();
+        Cat cat = new Cat("Grizabella", "white", 29);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
 
-        // Werte setzen
-        cat.name = "Grizabella";
-        cat.furColor = "white";
-        cat.age = 29;
 
         // Werte ausgeben
         output(cat.name);
@@ -30,10 +26,7 @@ public class App {
 
         System.out.println("----------------------------");
 
-        Cat cat2 = new Cat();
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
         output("Blick von aussen: " + cat2);
         output("Blick von innen: " + cat2.getInstanceVariable());
