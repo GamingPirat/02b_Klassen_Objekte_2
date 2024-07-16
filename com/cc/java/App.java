@@ -15,16 +15,13 @@ public class App {
 
 
         // Werte ausgeben
-        output(cat.name);
-        output(cat.furColor);
+        output(cat.getName());
+        output(cat.getFurColor());
         // output("age: " + cat.age);
                 // Explizite Typumwandlung
         // output(String.valueOf(cat.age)); // age wird in String konvertiert
-        output(Integer.toString(cat.age)); // age wird in String konvertiert
+        output(Integer.toString(cat.getAge())); // age wird in String konvertiert
                 
-        cat.furColor = "grey";
-        output(cat.furColor);
-
         System.out.println("----------------------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
@@ -33,13 +30,16 @@ public class App {
         output("Blick von innen: " + cat2.getInstanceVariable());
 
                 // Werte ausgeben
-                output(cat2.name);
-                output(cat2.furColor);
+                output(cat2.getName());
+                output(cat2.getFurColor());
                 // output("age: " + cat.age);
                         // Explizite Typumwandlung
                 // output(String.valueOf(cat.age)); // age wird in String konvertiert
-                output(Integer.toString(cat2.age)); // age wird in String konvertiert
-        
+                output(Integer.toString(cat2.getAge())); // age wird in String konvertiert
+        cat2.setAge(36);
+        output(Integer.toString(cat2.getAge())); // age wird in String konvertiert
+
+
     }
 
       // Statische Methode, die in der Klasse ausgeführt wird ...
