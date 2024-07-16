@@ -38,10 +38,6 @@ public class Cat {
     }
 
     /* Setter */
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setFurColor(String furColor) {
         this.furColor = furColor;
     }
