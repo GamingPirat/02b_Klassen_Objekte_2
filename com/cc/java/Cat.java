@@ -2,14 +2,11 @@ package com.cc.java;
 
 public class Cat {
 
-    // Eigenschaften / properties
-    // Felder / fields / attributes
-    public String name;// pass by reference
-    public String furColor;
-    public int age;    // pass by value
+    private String name;// pass by reference
+    private String furColor;
+    private int age;    // pass by value
 
-
-
+    // Konstruktor (keinen Rückgabetyp)
     public Cat(String name, String furColor, int age) {
         this.name = name;
         this.furColor = furColor;
@@ -19,6 +16,12 @@ public class Cat {
 
 
 
+
+
+
+
+
+    
     // Rückgabetyp -- Cat
     public Cat getInstanceVariable(){
         return this;

@@ -22,7 +22,8 @@ public class App {
         // output(String.valueOf(cat.age)); // age wird in String konvertiert
         output(Integer.toString(cat.age)); // age wird in String konvertiert
                 
-
+        cat.furColor = "grey";
+        output(cat.furColor);
 
         System.out.println("----------------------------");
 
